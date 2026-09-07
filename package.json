@@ -1,0 +1,37 @@
+{
+  "name": "batch-image-converter",
+  "productName": "Batch Image Converter",
+  "version": "1.0.0",
+  "description": "Batch image resolution and format converter",
+  "main": "main.js",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.s1.batchimageconverter",
+    "productName": "Batch Image Converter",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    },
+    "portable": {
+      "artifactName": "BatchImageConverter-Portable.exe"
+    }
+  },
+  "allowScripts": {
+    "electron@44.2.0": true,
+    "electron-winstaller@5.4.0": true
+  }
+}
