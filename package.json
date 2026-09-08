@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Batch image resolution and format converter",
   "main": "main.js",
-  "author": "",
+  "author": "s1",
   "license": "MIT",
   "scripts": {
     "start": "electron .",
